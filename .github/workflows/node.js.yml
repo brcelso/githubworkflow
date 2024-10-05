@@ -29,7 +29,7 @@ jobs:
         registry-url: https://registry.npmjs.org
         scope: '@octocat'
         cache: 'npm'
-    - run: init -y
+    - run: npm init -y
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
